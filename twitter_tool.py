@@ -31,8 +31,11 @@ def setup_api():
 def get_profile(api):
     """Get valid twitter profile name from user"""
 
+    # Ask user for twitter profile name until an existing profile is entered
     while True:
-        profile = raw_input("Enter Twitter profile: ")
+        profile = "" # Initialise empty string
+        while len(profile) == 0: # Repeat until user enters string
+            profile = raw_input("Enter Twitter profile: ")
         if profile[0] == "@": # Remove @ sign if included
             profile = profile[1:]
         try:

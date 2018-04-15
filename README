@@ -1,0 +1,7 @@
+Twitter Tool
+-------------------------------------------------
+Experimental tool to test Twitter's API
+-------------------------------------------------
+
+- Run twitter_tool.py, requests a Twitter username, gathers information on followers and performs tweet analysis 
+- Needs auxilary file api_keys.txt which contains user authentication keys for API. Make sure to not track.
